@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
- root "welcome#home"
+ root "welcome#index"
  resources :docs
 
   # The priority is based upon order of creation: first created -> highest priority.
