@@ -30,6 +30,7 @@ class DocsController < ApplicationController
             redirect_to @doc
         else
             render 'edit'
+        end
     end
     
     def destroy
@@ -46,5 +47,5 @@ class DocsController < ApplicationController
     def doc_params
         params.require(:doc).permit(:title, :content)
     end
-    
+ 
 end
